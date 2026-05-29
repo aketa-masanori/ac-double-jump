@@ -1,0 +1,7 @@
+.gradle/
+build/
+out/
+gradle-8.10.2/
+*.iml
+.idea/
+.vscode/

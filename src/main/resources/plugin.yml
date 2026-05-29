@@ -1,0 +1,16 @@
+name: AcDoubleJump
+version: ${version}
+main: com.yamabuki.acdoublejump.AcDoubleJumpPlugin
+api-version: '1.21'
+author: yamabuki
+commands:
+  acdoublejump:
+    description: AcDoubleJump command
+    usage: /acdoublejump reload
+    aliases:
+      - acdj
+permissions:
+  acdoublejump.reload:
+    default: op
+  acdoublejump.use:
+    default: true

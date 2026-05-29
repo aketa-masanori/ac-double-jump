@@ -1,0 +1,80 @@
+worlds:
+  world:
+    enabled: true
+    cooldown: 0s
+    horizontal: 0.7
+    vertical: 1.5
+    allow-in-combat: true
+    prevent-fall-damage: true
+
+  world_nether:
+    enabled: true
+    cooldown: 0s
+    horizontal: 0.7
+    vertical: 1.5
+    allow-in-combat: true
+    prevent-fall-damage: true
+
+  Saitama-Shi:
+    enabled: true
+    cooldown: 0s
+    horizontal: 0.7
+    vertical: 1.5
+    allow-in-combat: true
+    prevent-fall-damage: true
+
+  MebiusWorld:
+    enabled: true
+    cooldown: 10s
+    horizontal: 0.3
+    vertical: 0.7
+    allow-in-combat: false
+    prevent-fall-damage: false
+
+  Minami-Nagareyama:
+    enabled: true
+    cooldown: 10s
+    horizontal: 0.3
+    vertical: 0.7
+    allow-in-combat: false
+    prevent-fall-damage: false
+
+  Narashino:
+    enabled: true
+    cooldown: 10s
+    horizontal: 0.3
+    vertical: 0.7
+    allow-in-combat: false
+    prevent-fall-damage: false
+
+  Shin-Misato:
+    enabled: true
+    cooldown: 10s
+    horizontal: 0.3
+    vertical: 0.7
+    allow-in-combat: false
+    prevent-fall-damage: false
+
+  Ina-Machi:
+    enabled: true
+    cooldown: 10s
+    horizontal: 0.3
+    vertical: 0.7
+    allow-in-combat: false
+    prevent-fall-damage: false
+
+  world_the_end:
+    enabled: true
+    cooldown: 10s
+    horizontal: 0.3
+    vertical: 0.7
+    allow-in-combat: false
+    prevent-fall-damage: false
+
+default-world-setting:
+  enabled: false
+  cooldown: 10s
+  horizontal: 0.3
+  vertical: 0.7
+  allow-in-combat: false
+  prevent-fall-damage: false
