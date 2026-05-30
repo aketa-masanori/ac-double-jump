@@ -167,13 +167,20 @@ public final class AcDoubleJumpPlugin extends JavaPlugin implements Listener, Co
         return System.currentTimeMillis() - lastJump < settings.cooldownMillis();
     }
 
+    private boolean canArmFlightNow(Player player) {
+        if (!canUseDoubleJump(player)) {
+            return false;
+        }
+        return !isOnCooldown(player, getSettings(player));
+    }
+
     private void updatePlayerFlightState(Player player) {
         GameMode gameMode = player.getGameMode();
         if (gameMode == GameMode.CREATIVE || gameMode == GameMode.SPECTATOR) {
             return;
         }
 
-        if (!canUseDoubleJump(player)) {
+        if (!canArmFlightNow(player)) {
             player.setAllowFlight(false);
             player.setFlying(false);
             return;
@@ -214,8 +221,10 @@ public final class AcDoubleJumpPlugin extends JavaPlugin implements Listener, Co
         if (!isGameplayMode(player)) {
             return;
         }
-        if (canUseDoubleJump(player) && !player.getAllowFlight()) {
+        if (canArmFlightNow(player) && !player.getAllowFlight()) {
             player.setAllowFlight(true);
+        } else if (!canArmFlightNow(player) && player.getAllowFlight()) {
+            player.setAllowFlight(false);
         }
     }
 
